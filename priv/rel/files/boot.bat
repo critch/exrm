@@ -26,7 +26,7 @@
   set release_root_dir=%%~fA
 )
 @set start_erl=%release_root_dir%\releases\start_erl.data
-@for /f "delims=" %%i in ('type %start_erl%') do @(
+@for /f "delims=" %%i in ('type "%start_erl%"') do @(
   set start_erl_data=%%i
 )
 @for /f "tokens=1,* delims=\ " %%a in ("%start_erl_data%") do @(
